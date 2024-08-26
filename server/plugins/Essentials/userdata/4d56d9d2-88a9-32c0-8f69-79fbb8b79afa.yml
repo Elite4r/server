@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 0:0:0:0:0:0:0:1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1724678874133
+  login: 1724678867917
+money: '0'
+last-account-name: Eggs_Benedict
+logoutlocation:
+  world: 414b3091-2aa1-420f-a203-f020f07aa55b
+  world-name: world
+  x: 109.5
+  y: -121.1768963798221
+  z: 255.5
+  yaw: -6.450000762939453
+  pitch: 90.0
