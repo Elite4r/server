@@ -1,0 +1,60 @@
+# The number at the end of the of each line is how much enabling this is going to improve server performance compared to other features
+# The numbers are on a scale of 1-10
+# All features are enabled by default
+version: 0.1.5
+
+# Automatically removes loaded chunks in worlds that have no players every 10 seconds. (9)
+autoChunk: true
+
+# Removes spawn chunks for all worlds in your server. (10)
+noSpawnChunks: true
+
+# This determines if the Smart Lag Detection AI is working to keep your server lag free. (10)
+smartlagai: true
+
+# Smart lag detection. If a player types "lag" or "lagg" in the chat and your server TPS is less than this number, the servers lag removal AI will become active. (10)
+TPS: 16.00
+
+# Smart lag detection. If a player types "lag" or "lagg" in the chat and your server has less than this amount of ram left, the servers lag removal AI will become active. UNIT IN MEGABYTES (10)
+RAM: 100
+
+# This is the protocol id that you want executed by the smart lag removal tool. PROTOCOLS: clear_items, warn_clear_items, warn_clear_entities_all, warn_clear_entities_hostile, warn_clear_entities_peaceful, clear_entities_all, clear_entities_hostile, clear_entities_peaceful, command
+lag_protocol: warn_clear_items
+
+# This command will be run when the command protocol is used. This can be any command from any plugin. (WITHOUT THE / PREFIX)
+lag_command: help 1
+
+# Item clearing cool down. This is how long the smart lag detection has to wait until it can run its protocol again. Time is in minutes!
+protocol_cooldown: 5
+
+# This is a list of worlds that will not be automatically saved by the server. This reduces disk usage but can only be used for worlds in which the terrain is not being edited. Add DISABLED to the list to allow all worlds to automatically save. (6)
+nosaveworlds:
+- DISABLED
+
+# This automatically removes lag after a certain period of time. The time is in minutes.
+auto-lag-removal: false
+auto-lag-time: 10
+
+# This makes it where players without the lr.view permission can not view any messages from LaggRemover.
+incognito: false
+
+# This prevents mobs from spawning in a chunk that contains more than the amount of entities specified in the "thinAt" value. (10 because it can prevent players from creating lag machines)
+thinMobs: true
+
+# The max number of entities that can spawn in a single chunk.
+thinAt: 30
+
+# Allows the LaggRemover AI (Artificial Inteligence) to perform action to lower the amount of packets being sent to just the player that typed lag. (10)
+doRelativeAction: true
+
+# When enabled, only allows the removal of items for relative lag removal for players.
+doOnlyItemsForRelative: false
+
+# This prevents non-hostile mobs from being removed by the relative lag removal system. THIS HAS TO BE DISABLED TO USE doOnlyItemsForRelative
+dontDoFriendlyMobsForRelative: true
+
+# Change this to true to disable the use of the LaggRemover prefix. Note: Showing of the prefix helps out LaggRemover, if you disable it, please consider donating.
+disablePrefix: false
+
+# This is whether you would like this plugin to automatically check and install new updates. This is highly recommended.
+auto-update: true
